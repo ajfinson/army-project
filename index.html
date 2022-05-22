@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" >
+<link rel="stylesheet" href="css/styles.css">
+<script type = "text/javascript" src ="js/functions.js"></script>
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initialscale=1.0" >
+    <title>קבלת חייל למדור מערכות מידע </title>
+</head>
+<body>
+<div class="container">
+  <form id="getValues" autocomplete="on" >
+    <div class="row">
+    <h1>ברוך הבא למדור מערכות מידע</h1>
+    </div>
+    <br>
+  <div class="row">
+    <div class="col-25">
+      <label for="personal_name">שם פרטי:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="personal_name" name="personal_name">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-25">
+      <label for="family_name">שם משפחה:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="family_name" name="family_name">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-25">
+      <label for="join_date">תאריך גיוס:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="join_date" name="join_date">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-25">
+      <label for="address">כתובת מגורים:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="address" name="address" value="דרך שיבא 2, רמת גן" disabled>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-25">
+      <label for="person_email">מייל:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="person_email" name="person_email">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-25">
+      <label for="person_age">גיל:</label>
+    </div>
+    <div class="col-75">
+      <input type="number" id="person_age" name="person_age">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-25">
+      <label for="unit">חיל:</label>
+    </div>
+    <div class="col-75">
+      <select id="unit" name="unit">
+        <option value="שיריון">שיריון</option>
+        <option value="גולני">גולני</option>
+        <option value="גבעתי">גבעתי</option>
+        <option value="חטל">חטל</option>
+        <option value="נסא">נסא</option>
+        <option value="חיל האויר">חיל האויר</option>
+      </select>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-25">
+      <label>שביעות רצון:</label>
+    </div>
+    <div class="col-75">
+        <input type="radio" id="level_of_satisfaction" name="level_of_satisfaction1" value="1"> <label for="level_of_satisfaction1">1</label>
+        <input type="radio" id="level_of_satisfaction" name="level_of_satisfaction2" value="2"> <label for="level_of_satisfaction2">2</label>
+        <input type="radio" id="level_of_satisfaction" name="level_of_satisfaction3" value="3"> <label for="level_of_satisfaction3">3</label>
+        <input type="radio" id="level_of_satisfaction" name="level_of_satisfaction4" value="4"> <label for="level_of_satisfaction4">4</label>
+        <input type="radio" id="level_of_satisfaction" name="level_of_satisfaction5" value="5"> <label for="level_of_satisfaction5">5</label>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-25">
+      <label for="checkbox_pick">האם אתה עתודאי:</label>
+    </div>
+    <div class="col-75">
+        <input type="checkbox" id="checkbox_pick" value="false">
+        <label for="checkbox_pick">עתודאי</label>
+    </div>
+  </div>
+  <br>
+    <input type="submit" value="שלח" onclick="(submitForm())">
+  </form>
+</div>
+</body>
+</html>
